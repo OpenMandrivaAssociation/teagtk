@@ -1,6 +1,6 @@
 Summary:	A simple-in-use GTK-based text editor
-Name:		tea
-Version:	17.6.1
+Name:		teagtk
+Version:	17.6.3
 Release:	%mkrel 1
 Epoch:		0
 Group:		Editors
@@ -11,9 +11,11 @@ Source0:	http://ovh.dl.sourceforge.net/sourceforge/tea-editor/%{name}-%{version}
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	gtk+2-devel gtksourceview-devel gnome-vfs2-devel
 BuildRequires:	imagemagick aspell-devel
+Obsoletes:	tea < %epoch:%version
+Provides:	tea = %epoch:%version
 
 %description
-Tea is a simple-in-use GTK-based text editor.
+Teagtk is a simple-in-use GTK-based text editor.
 
 
 %prep
@@ -64,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog NEWS README TODO
 %{_bindir}/*
-%{_datadir}/tea
+%{_datadir}/%name
 %_liconsdir/%name.png
 %_miconsdir/%name.png
 %_iconsdir/%name.png
