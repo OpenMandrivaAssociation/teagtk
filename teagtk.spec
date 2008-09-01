@@ -1,6 +1,6 @@
 Summary:	A simple-in-use GTK-based text editor
 Name:		teagtk
-Version:	17.6.5
+Version:	17.6.6
 Release:	%mkrel 1
 Epoch:		0
 Group:		Editors
