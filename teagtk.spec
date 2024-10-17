@@ -5,7 +5,7 @@ Release:	%mkrel 2
 Epoch:		0
 Group:		Editors
 License:	GPLv2+
-URL:		http://tea-editor.sourceforge.net/
+URL:		https://tea-editor.sourceforge.net/
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/tea-editor/%{name}-%{version}.tar.bz2
 
 BuildRoot:	%{_tmppath}/%{name}-root
