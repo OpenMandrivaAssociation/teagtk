@@ -9,6 +9,11 @@ URL:		https://tea-editor.sourceforge.net/
 Source0:	http://ovh.dl.sourceforge.net/sourceforge/tea-editor/%{name}-%{version}.tar.bz2
 
 BuildRoot:	%{_tmppath}/%{name}-root
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk+2-devel gtksourceview-devel gnome-vfs2-devel
 BuildRequires:	imagemagick aspell-devel
 Obsoletes:	tea < %epoch:%version
